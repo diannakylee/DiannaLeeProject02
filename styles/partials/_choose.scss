@@ -1,0 +1,31 @@
+
+.valuesSection {
+    display: flex;
+}
+
+.values1 {
+    width: 50%;
+    background: #f1f3f3;
+    padding: 50px 80px;
+    overflow: hidden;
+    &__title {
+        margin-bottom: 45px;
+    }
+}
+
+.values2 {
+    width: 50%;
+    height: auto;
+}
+
+.chooseUs {
+    display: flex;
+    margin-bottom: 15px;
+    &__image {
+        width: 35%;
+        padding-top: 5px;
+    }
+    &__textBox {
+        margin-left: 20px;
+    }
+}

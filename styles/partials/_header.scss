@@ -1,0 +1,46 @@
+
+header {
+    background-image:url(../assets/image-1.jpeg);
+    height: 100vh;
+    background-size: cover;
+}
+
+header.wrapper {
+    display: flex;
+}
+
+.navBar {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+    &__navigation {
+        display: flex;
+    }
+}
+
+.navBar__navigation ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    & li {
+        align-items: center;
+        a {
+            align-items: center;
+            text-decoration: none;
+            color: #1d1d1d;
+            font-size: 1.6rem;
+            padding: 10px;
+            margin: 2.5px;
+            text-transform: uppercase;
+            &:hover {
+                color: #0e5f88;
+            }
+        }
+    }
+}
+
+.heroText {
+    height: 100%;
+}
+

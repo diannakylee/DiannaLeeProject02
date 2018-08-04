@@ -3,9 +3,50 @@ html {
 }
 
 .wrapper {
-    max-width: 60%;
+    max-width: 65%;
+    margin: 0 auto;
 }
 
 body {
     max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+
+img {
+    max-width: 100%;
+}
+
+img, li, ul, figure {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blueButton {
+    background: #0e5f88;
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid #0e5f88;
+    border-radius: 10px;
+    &--black {
+        background: #1d1d1d;
+        color: white;   
+        }
+    &:hover {
+        background: white;
+        color: #0e5f88;
+   
+    }
+    
+
 }

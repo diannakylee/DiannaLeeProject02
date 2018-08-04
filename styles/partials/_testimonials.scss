@@ -1,0 +1,67 @@
+.sectionTestimonials {
+    background: #1d1d1d;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 100px 0;
+    &__title {
+        color: #dfdede;
+        margin-bottom: 30px;
+    }
+    &__image {
+        margin: 30px 0;
+    }
+    &__text {
+        color: #dfdede;
+        font-family: "Open Sans";
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    &__author {
+        color: #dfdede;
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+}
+
+.gallery {
+    display: flex;
+    &__cell {
+        width: 25%;
+        position: relative;
+    }
+} 
+
+.gallery__cellTitle, .gallery__cellText {
+    color: #ffffff;
+}
+
+.gallery__overlay {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(29, 29, 29, 0.78);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+}
+
+.gallery__textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.gallery__cell:hover .gallery__overlay {
+    display: block;
+}

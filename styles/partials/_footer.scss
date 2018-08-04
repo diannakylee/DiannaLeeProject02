@@ -1,0 +1,37 @@
+footer {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+.footerTop {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBox {
+    width: 35%;
+    &__heading {
+        margin-bottom: 30px;
+    }
+}
+
+.footerBox1 {
+    width: 23%;
+}
+
+.footerBox2 {
+    width: 30%;
+}
+
+.footerBox3 {
+    width: 38%;
+}
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    &__cell {
+        padding: 0 0 5px 5px;
+    }
+}

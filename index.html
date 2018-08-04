@@ -12,100 +12,107 @@
 </head>
 <body>
     <header>
-        <div class="navBar">
-            <div class="navBar__logo">
-                <h2>Corporate</h2>
+        <div class="wrapper">
+            <div class="navBar">
+                <div class="navBar__logo">
+                    <h2>Corporate</h2>
+                </div>
+                <nav class="navBar__navigation">
+                    <ul>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">home</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">about</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">blog</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">pages</a>
+                        </li>
+                        <li class="navBar__item">
+                            <a href="#" class="navBar__link">about us</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="navBar__navigation">
-                <ul>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">home</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">about</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">blog</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">pages</a>
-                    </li>
-                    <li class="navBar__item">
-                        <a href="#" class="navBar__link">about us</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="heroText">
-            <h1 class="heroText__title">Welcome</h1>
-            <h3 class="heroText__subtitle">To My Corporate Website</h3>
-            <button class="heroText_button blueButton">Start</button>
+            <div class="heroText">
+                <h1 class="heroText__title">Welcome</h1>
+                <h3 class="heroText__subtitle">To My Corporate Website</h3>
+                <button class="heroText_button blueButton">Start</button>
+            </div>
         </div>
     </header>
     <main>
-        <section id="welcome">
-            <div class="wrapper">
+        <section id="welcome" class="welcomeSection">
+            <div class="welcome wrapper">
                 <div class="titleTextButton">
-                    <h2 class="titleTextButton__title">Welcome to Corporate</h2>
+                    <h2 class="titleTextButton__title">Welcome to <span class="blueWord">Corporate</span></h2>
                     <p class="titleTextButton__text">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie vel tempus purus. Donec sed tellus mi.</p>
                     <button class="titleTextButton__button blueButton">know more</button>
                 </div>
             </div>
         </section>
         <section id="values">
-            <div class="wrapper">
-                <div class="values">
-                    <h2 class="values__Title">Why Choose Us</h2>
+            <div class="valuesSection">
+                <div class="values1">
+                    <h2 class="values1__title">Why Choose Us</h2>
                     <div class="chooseUs">
                         <figure class="chooseUs__image"><img src="assets/image-2.jpeg" alt="man in suit smiling"></figure>
-                        <h3 class="chooseUs__title">15 Years of experience</h3>
-                        <p class="chooseUs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>    
+                        <div class="chooseUs__textBox">
+                            <h3 class="chooseUs__title">15 Years of experience</h3>
+                            <p class="chooseUs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+                        </div>
                     </div>
                     <div class="chooseUs">
                         <figure class="chooseUs__image">
                             <img src="assets/image-3.jpeg" alt="man in suit smiling">
                         </figure>
-                        <h3 class="chooseUs__title">900+ Happy clients</h3>
-                        <p class="chooseUs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+                        <div class="chooseUs__textBox">
+                            <h3 class="chooseUs__title">900+ Happy clients</h3>
+                            <p class="chooseUs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec justo id lectus tempus sollicitudin a et purus. Fusce tempus</p>
+                        </div>
                     </div>
                 </div>
-                <div class="choose">
-                    <figure class="choose__image">
+                <div class="values2">
+                    <figure class="values2__image">
                         <img src="assets/image-4.jpeg" alt="">
                     </figure>
                 </div>
+
             </div>
         </section>
-        <section id="services1">
+        <section id="services1" class="sectionServices1">
             <div class="wrapper">
                 <h2 class="sectionTitle">services</h2>
                 <div class="services1">
-                    <p class="services1__icon"></p>
+                    <p class="services1__icon"><i class="fas fa-object-group"></i></p>
                     <h4 class="services1__title">UX/UI design</h4>
                     <p class="services1__text">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
-                    <p class="services1__listItem">Lorem, ipsum dolor.</p>
+                    <p class="services1__listItem">Dolor sit amet.</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
                 </div>
-                <div class="services1">
-                    <p class="services1__icon"></p>
+                <div class="services1 services1--margin">
+                    <p class="services1__icon"><i class="fas fa-laptop"></i></p>
                     <h4 class="services1__title">Programming</h4>
                     <p class="services1__text">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
-                    <p class="services1__listItem">Lorem, ipsum dolor.</p>
+                    <p class="services1__listItem">Dolor sit amet.</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
                 </div>
                 <div class="services1">
-                    <p class="services1__icon"></p>
+                    <p class="services1__icon"><i class="fas fa-chart-line"></i></p>
                     <h4 class="services1__title">analytics</h4>
                     <p class="services1__text">Lorem ipsum dolor sit amet, cons ectetur adipiscing elit</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
-                    <p class="services1__listItem">Lorem, ipsum dolor.</p>
+                    <p class="services1__listItem">Dolor sit amet.</p>
                     <p class="services1__listItem">Lorem, ipsum.</p>
                 </div>
             </div>
         </section>
-        <section id="testimonials">
+        <section id="testimonials" class="sectionTestimonials">
             <div class="wrapper">
                 <div class="testimonials">
                     <h2 class="testimonials__title">People say about Us</h2>
@@ -113,49 +120,57 @@
                         <img src="assets/image-5.jpeg" alt="">
                     </figure>
                     <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, leo gravida la cinia aliquet augue nisi scelerisque velit, vitae ornare lectus lorem nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p class="testimonials_author">Lewis</p>
+                    <p class="testimonials__author">Lewis</p>
                 </div>
             </div>
             <div class="gallery">
                 <figure class="gallery__cell">
                     <img src="assets/image-6.jpeg" alt="">
-                    <figcaption>
-                        <h3 class="gallery__cellTitle">Project #1</h3>
-                        <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <figcaption class="gallery__overlay">
+                        <div class="gallery__textBox">
+                            <h3 class="gallery__cellTitle">Project #1</h3>
+                            <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </figcaption>
                 </figure>
                 <figure class="gallery__cell">
                     <img src="assets/image-7.jpeg" alt="">
-                    <figcaption>
-                        <h3 class="gallery__cellTitle">Project #2</h3>
-                        <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <figcaption class="gallery__overlay">
+                        <div class="gallery__textBox">
+                            <h3 class="gallery__cellTitle">Project #2</h3>
+                            <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </figcaption>
                 </figure>
                 <figure class="gallery__cell">
                     <img src="assets/image-8.jpeg" alt="">
-                    <figcaption>
-                        <h3 class="gallery__cellTitle">Project #3</h3>
-                        <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <figcaption class="gallery__overlay">
+                        <div class="gallery__textBox">
+                            <h3 class="gallery__cellTitle">Project #3</h3>
+                            <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </figcaption>
                 </figure>
                 <figure class="gallery__cell">
                     <img src="assets/image-9.jpeg" alt="">
-                    <figcaption>
-                        <h3 class="gallery__cellTitle">Project #4</h3>
-                        <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <figcaption class="gallery__overlay">
+                        <div class="gallery__textBox">
+                            <h3 class="gallery__cellTitle">Project #4</h3>
+                            <p class="gallery__cellText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </figcaption>
                 </figure>
             </div>
         </section>
-        <section id="services2">
+        <section id="services2" class="sectionServices2">
             <div class="wrapper">
                 <div class="services2">
-                    <h2></h2>
-                    <div class="services2__cell titleTextButton">
-                        <h2 class="titleTextButton__title--small">design</h2>
+                    <h2>Services</h2>
+                    <div class="services2__cell titleTextButton--small">
+                        <h3 class="titleTextButton__title--small">design</h3>
                         <p class="titleTextButton__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                         <button class="titleTextButton__button--small blueButton">more</button>
-                        <p class="services__cellNumber">1</p>
+                        <p class="services2__cellNumber">1.</p>
                     </div>
                     <div class="services2__cell">
                         <figure class="services2_image">
@@ -167,28 +182,28 @@
                             <img src="assets/image-11.jpeg" alt="">
                         </figure>
                     </div>
-                    <div class="services2__cell titleTextButton">
-                        <h2 class="titleTextButton__title--small">analytics</h2>
+                    <div class="services2__cell titleTextButton--small">
+                        <h3 class="titleTextButton__title--small">analytics</h3>
                         <p class="titleTextButton__text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                         <button class="titleTextButton__button--small blueButton">more</button>
-                        <p class="services__cellNumber">2</p>
+                        <p class="services2__cellNumber">2.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="questions">
+        <section id="questions" class="sectionQuestions">
             <div class="wrapper">
                 <div class="questions">
                     <h2 class="questions__title">Ask a question</h2>
                     <input type="text" class="questions__form" placeholder="Your message">
-                    <button class="blueButton">send</button>
+                    <button class="blueButton--black">send</button>
                 </div>
             </div>
         </section>
-        <section id="about">
+        <section id="about" class="sectionAbout">
             <div class="wrapper">
                 <div class="about">
-                    <h2 class="about__title"></h2>
+                    <h2 class="about__title">our team</h2>
                     <figure class="about__images">
                         <img src="assets/image-12.jpeg" alt="">
                         <figcaption class="about__imagesCaption">
@@ -218,18 +233,18 @@
         <div class="wrapper">
             <div class="footerTop">
                 <div class="footerBox footerBox1">
-                    <h4 class="footerBox_heading">Contact</h4>
+                    <h4 class="footerBox__heading">Contact</h4>
                     <p class="footerBox1__text footerBox1__text--email">info@hackeryou.com</p>
                     <p class="footerBox1__text footerBox1__text--phone">123-456-7890</p>
                     <p class="footerBox1__text footerBox1__text--city">Toronto, Ontario</p>
                     <input type="text" placeholder="email address">
                 </div>
                 <div class="footerBox footerBox2">
-                    <h4 class="footerBox_heading">About Us</h4>
+                    <h4 class="footerBox__heading">About Us</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero quae autem. Quisquam, nesciunt eveniet incidunt doloribus in earum culpa?</p>
                 </div>
                 <div class="footerBox footerBox3">
-                    <h4 class="footerBox__heading">Instagram</h4>
+                    <h4 class="footerBox__heading footerBox3__heading">Instagram</h4>
                     <div class="instagram">
                         <figure class="instagram__cell">
                             <img src="assets/image-15.jpeg" alt="">

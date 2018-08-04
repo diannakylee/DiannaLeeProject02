@@ -1,0 +1,36 @@
+.sectionServices2 {
+    padding: 100px 0;
+}
+
+.services2 {
+    display: flex;
+    flex-wrap: wrap;
+    &__cell {
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+}
+
+.services2 h2 {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titleTextButton--small {
+    padding: 50px;
+}
+
+.services2__cellNumber {
+    position: absolute;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(229, 227, 227, 0.5);
+    z-index: 4;
+    top: -110px;
+}
