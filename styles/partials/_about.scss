@@ -6,17 +6,25 @@
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
+    
     &__title {
         margin-bottom: 30px;
         flex-basis: 100%;
+        align-items: center;
     }
-     &__images {
+    &__gallery {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__images {
+        flex: 0 1 auto;
         width: 30%;
-        justify-content: space-around;
+        height: 100%;
         position: relative;
     }
     &__imagesCaption {
         width: 100%;
+        height: 100%;
         background-color: rgba(29, 29, 29, 0.83);
         color: #eeeded;
         position: absolute;
@@ -24,10 +32,10 @@
         right: 0;
         bottom: 0;
         left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+        // display: flex;
+        display: none;
+    }
+    &__images:hover .about__imagesCaption {
+        display: block;
     }
 }
