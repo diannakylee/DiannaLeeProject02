@@ -7,13 +7,12 @@
     flex-wrap: wrap;
     &__cell {
         width: 50%;
-        height: 50%;
+        height: 300px;
         text-align: center;
         display: flex;
         flex-direction: column;
         position: relative;
     }
-
 }
 
 .services2 h2 {
@@ -33,4 +32,14 @@
     color: rgba(229, 227, 227, 0.5);
     z-index: 4;
     top: -110px;
+}
+
+.services2__cell--2 {
+    background-image: url(../assets/image-10.jpeg);
+    background-size: cover;
+}
+
+.services2__cell--3 {
+    background-image: url(../assets/image-11.jpeg);
+    background-size: cover;
 }

@@ -18,18 +18,49 @@ footer {
     }
 }
 
-// .footerBox1 {
-//     width: 23%;
-// }
-
-.footerBox2 {
-    @include padding (null, 30px, null, null)
-    flex: 0 1 auto;
+.footerBox1, .footerBox2 {
+    padding-right: 10%;
 }
 
-// .footerBox3 {
-//     width: 38%;
-// }
+.footerBox1__text {
+    &--email::before {
+    font-family: "Font Awesome 5 Free";
+        content: "\f0e0";
+        font-size: 16px;
+        font-weight: 900;
+        font-style: normal;
+        margin-right: 10px;
+    }
+    &--phone::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f095";
+        font-size: 16px;
+        font-weight: 900;
+        font-style: normal;
+        margin-right: 10px;
+    }
+    &--city::before{
+        font-family: "Font Awesome 5 Free";
+        content: "\f3c5";
+        font-size: 16px;
+        font-weight: 900;
+        font-style: normal;
+        margin-right: 10px;
+    }
+}
+
+.footerBox input {
+    background: transparent;
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+    color: #ffffff;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.footerBox2 {
+    flex: 0 1 auto;
+}
 
 .instagram {
     display: flex;
@@ -47,10 +78,14 @@ footer {
     color: white;
 }
 
+
+
 .copyright {
-    @include padding (null, null, 10px, null);
+    @include padding (null, null, 2px, null);
     text-align: center;
 }
+
+// Social Media Icons Styles begin here
 
 .footer__social {
     position: absolute;
@@ -63,11 +98,13 @@ footer {
 
 .footer_social a {
     color: rgba(255, 255, 255, 0.4);
-    
 }
 
 i.fab {
     color: rgba(255, 255, 255, 0.4);
     font-size: 2rem;
     @include padding (20px, 10px, 20px, null)
+    &:hover {
+        color: $secondary;
+    }
 }

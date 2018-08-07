@@ -17,6 +17,8 @@
                 <div class="navBar__logo">
                     <h2>Corporate</h2>
                 </div>
+                <!-- <input type="checkbox" class="toggle" id="toggle" name="toggle">
+                <label for="toggle" class="toggle"><i class="fa fa-bars"></i></label> -->
                 <nav class="navBar__navigation">
                     <ul>
                         <li class="navBar__item">
@@ -60,7 +62,7 @@
         </section>
         <section id="values">
             <div class="valuesSection">
-                <div class="values1">
+                <div class="values values1">
                     <h2 class="values1__title">Why Choose Us</h2>
                     <div class="chooseUs">
                         <figure class="chooseUs__image"><img src="assets/image-2.jpeg" alt="man in suit smiling"></figure>
@@ -79,12 +81,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="values2">
-                    <figure class="values2__image">
+                <div class="values values2">
+                    <!-- <figure class="values2__image">
                         <img src="assets/image-4.jpeg" alt="">
-                    </figure>
+                    </figure> -->
                 </div>
-
             </div>
         </section>
         <section id="services1" class="sectionServices1">
@@ -178,15 +179,15 @@
                         </div>
                         <p class="services2__cellNumber">1.</p>
                     </div>
-                    <div class="services2__cell">
-                        <figure class="services2_image">
+                    <div class="services2__cell services2__cell--2">
+                        <!-- <figure class="services2_image">
                             <img src="assets/image-10.jpeg" alt="">
-                        </figure>
+                        </figure> -->
                     </div>
-                    <div class="services2__cell">
-                        <figure class="services2_image">
+                    <div class="services2__cell services2__cell--3">
+                        <!-- <figure class="services2_image">
                             <img src="assets/image-11.jpeg" alt="">
-                        </figure>
+                        </figure> -->
                     </div>
                     <div class="services2__cell titleTextButton--small">
                         <h3 class="titleTextButton__title--small">analytics</h3>
@@ -203,9 +204,11 @@
             <div class="wrapper">
                 <div class="questions">
                     <h2 class="questions__title">Ask a question</h2>
-                    <input type="text" class="questions__form" placeholder="Your message">
-                    <div class="questions__button">
-                        <button class="blueButton--black">send</button>
+                    <div class="questions__form">
+                        <input type="text" class="questions__input" placeholder="Your message">
+                        <div class="questions__button">
+                            <button class=" blueButton blueButton--black">send</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,21 +222,23 @@
                             <img src="assets/image-12.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
                                 <h3 class="about__name">Mark Cohen</h3>
-                                <p class="about__title">Founder</p>
+                                <p class="about__position">Founder</p>
                             </figcaption>
                         </figure>
                         <figure class="about__images">
                             <img src="assets/image-13.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
-                                <h3 class="about__name">David Reagan</h3>
-                                <p class="about__title">Programmer</p>
+                                <div class="about__textBox">
+                                    <h3 class="about__name">David Reagan</h3>
+                                    <p class="about__position">Programmer</p>
+                                </div>
                             </figcaption>
                         </figure>
                         <figure class="about__images">
                             <img src="assets/image-14.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
                                 <h3 class="about__name">Stacy Kramer</h3>
-                                <p class="about__title">Designer</p>
+                                <p class="about__position">Designer</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -249,7 +254,10 @@
                     <p class="footerBox1__text footerBox1__text--email">info@hackeryou.com</p>
                     <p class="footerBox1__text footerBox1__text--phone">123-456-7890</p>
                     <p class="footerBox1__text footerBox1__text--city">Toronto, Ontario</p>
-                    <input type="text" placeholder="email address">
+                    <div class="emailInput">
+                        <input type="text" placeholder="email address">
+                        <button class="footer__button"></button>
+                    </div>
                 </div>
                 <div class="footerBox footerBox2">
                     <h4 class="footerBox__heading">About Us</h4>
@@ -319,7 +327,7 @@
                     </nav>
                 </div>
                 <div class="copyright">
-                    <p>2018 All Rights Reserved</p>
+                    <p>2018 All Rights Reserved ©</p>
                 </div>
             </div>
         </div>

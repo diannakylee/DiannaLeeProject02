@@ -4,13 +4,14 @@
 
 .testimonials {
     text-align: center;
+    @include flex (column, center, center, auto);
     padding: 100px 0;
     &__title {
         color: #dfdede;
         margin-bottom: 30px;
     }
     &__image {
-        margin: 30px 0;
+        margin: 30px auto;
     }
     &__text {
         color: #dfdede;
