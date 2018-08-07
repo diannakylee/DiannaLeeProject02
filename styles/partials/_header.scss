@@ -18,31 +18,42 @@ header.wrapper {
     &__navigation {
         display: flex;
     }
+    &__link {
+        align-items: center;
+        text-decoration: none;
+        color: $primary;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding: 10px;
+        margin: 2.5px;
+        text-transform: uppercase;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    // Footer Navigation adjustments
+    &--footer {
+        @include flex (column, center, center, wrap)
+        @include padding (null, null, 50px, null)
+    }
+    &__logo--footer {
+        @include margin (null, null, 15px, null);
+    }
 }
 
 .navBar__navigation ul {
     @include flex (auto, auto, center)
     list-style: none;
     & li {
-        a {
-            align-items: center;
-            text-decoration: none;
-            color: $primary;
-            font-size: 1.6rem;
-            font-weight: 700;
-            padding: 10px;
-            // margin: 2.5px;
-            text-transform: uppercase;
-            &:hover {
-                color: $secondary;
-            }
+
         }
-    }
 }
 
 .heroText {
     justify-content: center;
-    
+    @include bp(736) {
+        text-align: center;
+    }
 }
 
 

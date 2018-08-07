@@ -18,7 +18,17 @@ $primary:#1d1d1d;
 $secondary:#0e5f88;
 $tertiary:#8ecceb;
 
-
+@mixin bp($point) {
+  @if $point == 980 {
+    @media (max-width: 980px) { @content; }
+  }
+  @else if $point == 736 {
+    @media (max-width: 736px) { @content; }
+  }
+  @else if $point == 480 {
+    @media (max-width: 480px)  { @content; }
+  }
+}
 
 html {
     font-size: 62.5%;
@@ -27,6 +37,9 @@ html {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    @include bp(980) {
+        max-width: 700px;
+    }
 }
 
 body {
@@ -93,11 +106,15 @@ a {
     flex-wrap: $flexWrap;
 }
 
-@media all and (max-width: 1690px) { ...}
-@media all and (max-width: 1280px) { ...}
-@media all and (max-width: 980px) { ... }
-@media all and (max-width: 736px) { ... }
-@media all and (max-width: 480px) { ... }
+// @media all and (max-width: 1690px) { ...}
+// @media all and (max-width: 1280px) { ...}
+// @media all and (max-width: 980px) { ... }
+// @media all and (max-width: 736px) { ... }
+// @media all and (max-width: 480px) { ... }
+
+
+
+
 
 
 .blueButton {

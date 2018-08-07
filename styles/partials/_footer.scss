@@ -1,32 +1,35 @@
 footer {
     background-color: #1d1d1d;
     color: #ffffff;
+    position: relative;
 }
 
 .footerTop {
-    padding: 100px 0;
+    @include padding (100px, null, 50px, null);
     display: flex;
     justify-content: space-between;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .footerBox {
-    width: 35%;
+    width: 33%;
     &__heading {
         margin-bottom: 30px;
     }
 }
 
-.footerBox1 {
-    width: 23%;
-}
+// .footerBox1 {
+//     width: 23%;
+// }
 
 .footerBox2 {
-    width: 30%;
+    @include padding (null, 30px, null, null)
+    flex: 0 1 auto;
 }
 
-.footerBox3 {
-    width: 38%;
-}
+// .footerBox3 {
+//     width: 38%;
+// }
 
 .instagram {
     display: flex;
@@ -36,6 +39,35 @@ footer {
     }
 }
 
+.navBar__logo--footer {
+    flex-basis: 100%;
+}
+
 .navBar__item--white a {
     color: white;
+}
+
+.copyright {
+    @include padding (null, null, 10px, null);
+    text-align: center;
+}
+
+.footer__social {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_social a {
+    color: rgba(255, 255, 255, 0.4);
+    
+}
+
+i.fab {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2rem;
+    @include padding (20px, 10px, 20px, null)
 }
