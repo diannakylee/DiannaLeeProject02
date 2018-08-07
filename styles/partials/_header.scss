@@ -1,47 +1,48 @@
 
 header {
     background-image:url(../assets/image-1.jpeg);
+    background-position: center;
     height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header.wrapper {
-    display: flex;
+    height: 100vh;
+    @include flex (auto, space-between, center, wrap);
 }
 
 .navBar {
-    display: flex;
-    padding-top: 15px;
-    justify-content: space-between;
+    @include flex (auto, space-between);
+    @include padding(15px, null, null, null);
     &__navigation {
         display: flex;
     }
 }
 
 .navBar__navigation ul {
-    display: flex;
+    @include flex (auto, auto, center)
     list-style: none;
-    align-items: center;
-    justify-content: flex-end;
     & li {
-        align-items: center;
         a {
             align-items: center;
             text-decoration: none;
-            color: #1d1d1d;
+            color: $primary;
             font-size: 1.6rem;
+            font-weight: 700;
             padding: 10px;
-            margin: 2.5px;
+            // margin: 2.5px;
             text-transform: uppercase;
             &:hover {
-                color: #0e5f88;
+                color: $secondary;
             }
         }
     }
 }
 
-
-.heroText__button {
-    flex-grow: 0;
+.heroText {
+    justify-content: center;
+    
 }
+
 
