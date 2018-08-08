@@ -17,10 +17,12 @@
                 <div class="navBar__logo">
                     <h2>Corporate</h2>
                 </div>
-                <!-- <input type="checkbox" class="toggle" id="toggle" name="toggle">
-                <label for="toggle" class="toggle"><i class="fa fa-bars"></i></label> -->
+                <p class="hamburger"><i class="fas fa-bars"></i></p>
                 <nav class="navBar__navigation">
                     <ul>
+                        <li class="exit-responsive">
+                            <i class="fas fa-times"></i>
+                        </li>
                         <li class="navBar__item">
                             <a href="#" class="navBar__link">home</a>
                         </li>
@@ -346,6 +348,58 @@
             <!-- Pinterest: f231. instagram:f16d, fb: f09a  -->
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+    <script>
+
+        $(function () {
+
+            // // Testimonials Flickity
+            // var flkty = new Flickity('.main-gallery', {
+            //     cellAlign: 'left',
+            //     contain: true,
+            //     wrapAround: true,
+            //     prevNextButtons: false,
+            //     autoPlay: 000
+            // });
+
+            $('.hamburger').on('click', function () {
+                // toggle class show on the menu
+                $('.navBar__navigation').toggleClass('show');
+            });
+
+            $('.exit-responsive').on('click', function () {
+                // toggle class show on the menu
+                $('.navBar__navigation').toggleClass('show');
+            });
+
+            
+            // Menu Bar Scroll Change
+
+            var header = $(".navBar");
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    header.addClass("scrolled");
+                } else {
+                    header.removeClass("scrolled");
+                }
+            });
+
+
+            // $('.gallery').flickity({
+            //     wrapAround: true,
+            //     autoPlay: 1500,
+            //     imagesLoaded: true
+            // });
+
+            $('a').smoothScroll({
+                offset: 50
+            });
+        });
+    </script>
 
 </body>
 </html>

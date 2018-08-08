@@ -20,6 +20,7 @@ header .wrapper {
     @include padding(15px, null, null, null);
     &__navigation {
         display: flex;
+        justify-content: flex-end;
     }
     &__link {
         align-items: center;
@@ -38,18 +39,31 @@ header .wrapper {
     &--footer {
         @include flex (column, center, center, wrap);
         @include padding (null, null, 50px, null);
+        @include bp (665) {
+            display: none;
+        }
     }
     &__logo--footer {
         @include margin (null, null, 15px, null);
     }
 }
 
+
+// .scrolled{
+//   background-color: white;
+//   transition: 0.3s;
+//   .navBar li a, .navBar li i.fab {
+//   	color: $primary;
+//   }
+//   .navBar__logo {
+//   	color: $primary;
+//   }
+// }
+
+
 .navBar__navigation ul {
     @include flex (auto, auto, center);
     list-style: none;
-    & li {
-
-        }
 }
 
 .heroText {
@@ -63,3 +77,68 @@ header .wrapper {
 // .navBar input + label {
     
 // }
+
+// Hamburger Navigation Styles
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+
+.exit-responsive {
+	right: 0;
+	padding: 15px;
+}
+
+.show.navBar__navigation {
+    display: block;
+    position: fixed;
+}
+
+// Media Queries for Hamburger Menu
+
+@media all and (max-width: 780px) {
+
+    
+    .hamburger,
+	.exit-responsive {
+		display: block;
+		font-size: 25px;
+    }
+    
+    .hamburger {
+        margin-top: 5px;
+    }
+
+
+	.navBar__navigation {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+        background: rgba(255,255,255,0.99);
+	}
+
+	.navBar__navigation ul {
+		display: flex;
+		flex-direction: column;
+		background: white;
+	}
+
+	.navBar__navigation ul a {
+		font-size: 50px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.navBar__navigation ul a:hover {
+		color: $secondary;
+    }
+    
+    // .navBar_navigation--footer {
+    //     display: block;
+    // }
+
+}
