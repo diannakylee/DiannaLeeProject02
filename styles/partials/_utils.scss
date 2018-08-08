@@ -14,10 +14,17 @@
 // Project 1 overlay:rgba(29, 29, 29, 0.78);
 // About Us Overlay: rgba(29, 29, 29, 0.83);
 
+// Additional Colours for the rest of the Site ^^
+
+// Colour Styling
+
 $primary:#1d1d1d;
 $secondary:#0e5f88;
 $tertiary:#8ecceb;
 $buttonWhite: #efeeee;
+
+
+// Mixin for Media Query -- When I moved this down to the Mixin section, it stopped working in my partials so I left it where it is. Sorry!
 
 @mixin bp($point) {
   @if $point == 980 {
@@ -64,7 +71,6 @@ html {
 }
 
 body {
-
     margin: 0 auto;
     font-family: "Open Sans";
 }
@@ -87,10 +93,15 @@ a {
     text-decoration: none;
 }
 
+// Mixins Styling
+
+
+// for centering text
 @mixin center {
     margin: 0 auto;
 }
 
+// for overlay position
 @mixin overlayPosition {
     position: absolute;
     top: 0;
@@ -99,12 +110,14 @@ a {
     bottom: 0;
 }
 
+// for pseudo elements
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
     content: $content;
     display: $display;
     position: $pos;
 }
 
+// for adding padding
 @mixin padding($top, $right, $bottom, $left) {
   padding-top: $top;
   padding-right: $right;
@@ -112,6 +125,7 @@ a {
   padding-left: $left;
 }
 
+// for adding margin
 @mixin margin($top, $right, $bottom, $left) {
   margin-top: $top;
   margin-right: $right;
@@ -119,6 +133,7 @@ a {
   margin-left: $left;
 }
 
+// for flex --->> courtesy of Ricky Law
 @mixin flex($flexDirection:auto, $justifyContent:auto, $alignItems:auto, $flexWrap:auto){
     display: flex;
     flex-direction: $flexDirection;
@@ -127,28 +142,4 @@ a {
     flex-wrap: $flexWrap;
 }
 
-// @media all and (max-width: 1690px) { ...}
-// @media all and (max-width: 1280px) { ...}
-// @media all and (max-width: 980px) { ... }
-// @media all and (max-width: 736px) { ... }
-// @media all and (max-width: 480px) { ... }
 
-.blueButton {
-    background: $secondary;
-    padding: 5px 25px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $buttonWhite;
-    border: 2px solid $secondary;
-    border-radius: 10px;
-    &--black {
-        background: $primary;
-        border: 2px solid $primary;
-        color: $buttonWhite;   
-        }
-    &:hover {
-        background: $buttonWhite;
-        color: #0e5f88;
-    }
-}

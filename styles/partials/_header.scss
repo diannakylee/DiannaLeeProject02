@@ -15,6 +15,8 @@ header .wrapper {
     // @include flex (auto, column, center, wrap);
 }
 
+// Navigation + Logo styling
+
 .navBar {
     @include flex (auto, space-between);
     @include padding(15px, null, null, null);
@@ -66,19 +68,41 @@ header .wrapper {
     list-style: none;
 }
 
+// Hero Text Styling
+
 .heroText {
     @include flex (column, center, auto, auto);
     flex: 1 0 auto;
     @include bp(736) {
         text-align: center;
+        text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
     }
 }
 
-// .navBar input + label {
-    
-// }
 
-// Hamburger Navigation Styles
+// Button Styling for Full Page
+
+.blueButton {
+    background: $secondary;
+    padding: 5px 25px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $buttonWhite;
+    border: 2px solid $secondary;
+    border-radius: 10px;
+    &--black {
+        background: $primary;
+        border: 2px solid $primary;
+        color: $buttonWhite;   
+        }
+    &:hover {
+        background: $buttonWhite;
+        color: #0e5f88;
+    }
+}
+
+// Hamburger Navigation Styling
 
 .hamburger,
 .exit-responsive {
@@ -97,7 +121,7 @@ header .wrapper {
 
 // Media Queries for Hamburger Menu
 
-@media all and (max-width: 780px) {
+@media all and (max-width: 775px) {
 
     
     .hamburger,
@@ -108,6 +132,7 @@ header .wrapper {
     
     .hamburger {
         margin-top: 5px;
+        position: sticky;
     }
 
 
@@ -130,15 +155,13 @@ header .wrapper {
 	.navBar__navigation ul a {
 		font-size: 50px;
 		text-align: center;
-		width: 100%;
+        width: 100%;
+        color: black;
 	}
 
 	.navBar__navigation ul a:hover {
 		color: $secondary;
     }
     
-    // .navBar_navigation--footer {
-    //     display: block;
-    // }
 
 }

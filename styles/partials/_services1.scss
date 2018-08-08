@@ -27,6 +27,7 @@
     @include bp (665) {
         width: calc(100% / 2 - 30px);
         margin-bottom: 30px;
+        background-color: $tertiary;
     }
     @include bp (480) {
         width: 80%;
@@ -43,10 +44,11 @@
     }
     &__listItem {
         text-align: left;
-        padding: 0 15%;
-        line-height: 10px;
+        padding: 0 15px;
+        font-size: 1.2rem;
+        // line-height: 10px;
         @include bp (890){
-            padding: 0 10%;
+            padding: 0 15px;
         }
         @include bp (736) {
             display: none;
@@ -59,7 +61,14 @@
     }
 }
 
-
+.services1--3 {
+    @include bp(665) {
+        width: calc(100% - 30px);
+    } 
+    @include bp(480) {
+        width: 80%;
+    }
+}
 
 
 // #8ecceb

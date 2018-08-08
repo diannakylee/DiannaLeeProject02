@@ -10,12 +10,26 @@ footer {
     justify-content: space-between;
     @include flex(auto, space-between, auto, wrap);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+    @include bp (530) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
 }
 
 .footerBox {
     width: 30%;
     @include bp (810) {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    @include bp (530) {
+        margin-bottom: 50px;
+        width: 65%;
+    }
     }
     &__heading {
         margin-bottom: 30px;
@@ -63,6 +77,9 @@ footer {
         width: 100%;
         margin: 0 auto;
     }
+    @include bp (530) {
+        display: none;
+    }
 }
 
 .instagram {
@@ -101,6 +118,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include bp (530) {
+        flex-direction: row;
+        position: relative;
+        top: -120px;
+        left: 0;
+    }
 }
 
 .footer_social a {
@@ -111,6 +134,10 @@ i.fab {
     color: rgba(255, 255, 255, 0.4);
     font-size: 2rem;
     @include padding (20px, 10px, 20px, 20px);
+    @include bp (530) {
+        color: #ffffff;
+        font-size: 2.8rem;
+    }
     &:hover {
         color: $secondary;
     }
