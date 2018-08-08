@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 100px 0;
+    @include bp (665) {
+        padding: 70px 0;
+    }
 }
 
 .sectionServices1 h2 {
@@ -17,16 +20,37 @@
     border-radius: 15px;
     padding: 15px;
     text-align: center;
+    @include flex(column, auto, auto, wrap);
+    @include bp (810) {
+        padding: 10px;
+    }
+    @include bp (665) {
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 30px;
+    }
+    @include bp (480) {
+        width: 80%;
+    }
     &:hover {
         background: #8ecceb;
     }
     &__icon {
         font-size: 4.8rem;
         margin: 20px 0;
+        @include bp (480) {
+            margin: 5px 0;
+        }
     }
     &__listItem {
         text-align: left;
-        padding: 0 20%;
+        padding: 0 15%;
+        line-height: 10px;
+        @include bp (890){
+            padding: 0 10%;
+        }
+        @include bp (736) {
+            display: none;
+        }
         &::before {
             font-family: "Font Awesome 5 Free"; font-weight: 900; 
             content: "\f00c";

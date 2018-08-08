@@ -6,6 +6,9 @@
     padding: 100px 0;
     display: flex;
     flex-wrap: wrap;
+    @include bp (665) {
+        padding: 70px 0;
+    }
     &__title {
         margin-bottom: 30px;
         flex-basis: 100%;

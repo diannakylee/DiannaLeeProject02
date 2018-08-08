@@ -8,11 +8,15 @@ footer {
     @include padding (100px, null, 50px, null);
     display: flex;
     justify-content: space-between;
+    @include flex(auto, space-between, auto, wrap)
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .footerBox {
-    width: 33%;
+    width: 33.3%;
+    @include bp (810) {
+        width: 50%;
+    }
     &__heading {
         margin-bottom: 30px;
     }
@@ -62,6 +66,12 @@ footer {
     flex: 0 1 auto;
 }
 
+.footerBox3 {
+    @include bp (810) {
+        width: 100%;
+    }
+}
+
 .instagram {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +100,7 @@ footer {
 .footer__social {
     position: absolute;
     top: 200px;
-    right: 0;
+    right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +113,7 @@ footer {
 i.fab {
     color: rgba(255, 255, 255, 0.4);
     font-size: 2rem;
-    @include padding (20px, 10px, 20px, null)
+    @include padding (20px, 10px, 20px, 20px)
     &:hover {
         color: $secondary;
     }

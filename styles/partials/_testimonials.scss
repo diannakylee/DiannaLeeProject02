@@ -28,9 +28,22 @@
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     &__cell {
-        width: 25%;
+        flex-basis: 25%;
         position: relative;
+        @include bp (810) {
+            flex-basis: 33.3%;
+        }
+        &--4 {
+            @include bp (810) {
+                display: none;
+            }
+        }
+        & img {
+            object-fit: cover;
+            // height: ;
+        }
     }
 } 
 

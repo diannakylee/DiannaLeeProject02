@@ -23,8 +23,20 @@ $buttonWhite: #efeeee;
   @if $point == 980 {
     @media (max-width: 980px) { @content; }
   }
+  @else if $point == 890 {
+    @media (max-width: 890px) { @content; }
+  }  
+  @else if $point == 810 {
+    @media (max-width: 810px) { @content; }
+  }
   @else if $point == 736 {
     @media (max-width: 736px) { @content; }
+  }
+  @else if $point == 665 {
+    @media (max-width: 665px) { @content; }
+  }
+  @else if $point == 530 {
+    @media (max-width: 530px) { @content; }
   }
   @else if $point == 480 {
     @media (max-width: 480px)  { @content; }
@@ -36,15 +48,23 @@ html {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1280px;
+    width: 70%;
     margin: 0 auto;
     @include bp(980) {
-        max-width: 700px;
+        // max-width: 980px;
+        width: 80%;
+    }
+    @include bp (810) {
+        width: 85%;
+    }
+    @include bp (736) {
+        width: 90%;
     }
 }
 
 body {
-    max-width: 1280px;
+
     margin: 0 auto;
     font-family: "Open Sans";
 }
@@ -112,11 +132,6 @@ a {
 // @media all and (max-width: 980px) { ... }
 // @media all and (max-width: 736px) { ... }
 // @media all and (max-width: 480px) { ... }
-
-
-
-
-
 
 .blueButton {
     background: $secondary;

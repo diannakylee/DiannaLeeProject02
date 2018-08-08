@@ -7,6 +7,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    @include bp (665) {
+        padding: 70px 0;
+    }
     &__input {
         font-family: "Montserrat";
         font-size: 2rem;
