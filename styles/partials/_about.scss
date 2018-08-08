@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     @include bp (665) {
         padding: 70px 0;
+        margin: 0 auto;
     }
     &__title {
         margin-bottom: 30px;
@@ -17,24 +18,40 @@
     &__gallery {
         display: flex;
         justify-content: space-between;
+        @include bp (530) {
+            flex-direction: column;
+            margin: 0 auto;
+            align-content: center;
+            justify-content: center;
+        }
     }
     &__images {
-        flex: 0 1 auto;
+        // flex: 0 1 auto;
         width: 30%;
         height: 100%;
         position: relative;
+        @include bp (530) {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
     &__imagesCaption {
-        @include overlayPosition
+        @include overlayPosition;
         // width: 100%;
-        height: 100%;
+        // height: 100%;
         background-color: rgba(29, 29, 29, 0.83);
         color: #eeeded;
         text-align: center;
-        // @include flex(column, center, center, auto);
         display: none;
     }
     &__images:hover .about__imagesCaption {
         display: block;
     }
+}
+
+.about__overlayText {
+    height: 100%;
+    @include flex (column, center, center, auto);
+    padding: 0 10px;
 }

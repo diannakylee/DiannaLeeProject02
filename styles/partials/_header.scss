@@ -5,11 +5,13 @@ header {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
 }
 
-header.wrapper {
+header .wrapper {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     // @include flex (auto, column, center, wrap);
 }
 
@@ -34,8 +36,8 @@ header.wrapper {
     }
     // Footer Navigation adjustments
     &--footer {
-        @include flex (column, center, center, wrap)
-        @include padding (null, null, 50px, null)
+        @include flex (column, center, center, wrap);
+        @include padding (null, null, 50px, null);
     }
     &__logo--footer {
         @include margin (null, null, 15px, null);
@@ -43,7 +45,7 @@ header.wrapper {
 }
 
 .navBar__navigation ul {
-    @include flex (auto, auto, center)
+    @include flex (auto, auto, center);
     list-style: none;
     & li {
 

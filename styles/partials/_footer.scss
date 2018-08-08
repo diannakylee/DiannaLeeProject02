@@ -8,12 +8,12 @@ footer {
     @include padding (100px, null, 50px, null);
     display: flex;
     justify-content: space-between;
-    @include flex(auto, space-between, auto, wrap)
+    @include flex(auto, space-between, auto, wrap);
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
 }
 
 .footerBox {
-    width: 33.3%;
+    width: 30%;
     @include bp (810) {
         width: 50%;
     }
@@ -53,30 +53,26 @@ footer {
     }
 }
 
-.footerBox input {
-    background: transparent;
-    border: 1px solid #ffffff;
-    padding: 5px 10px;
-    color: #ffffff;
-    width: 100%;
-    margin: 10px 0;
-}
-
 .footerBox2 {
     flex: 0 1 auto;
 }
 
 .footerBox3 {
+    width: 40%;
     @include bp (810) {
         width: 100%;
     }
 }
 
 .instagram {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex (auto, auto, auto, wrap);
     &__cell {
         padding: 0 0 5px 5px;
+        &--last {
+            @include bp (980) {
+                display: none;
+            }
+        }
     }
 }
 
@@ -113,8 +109,31 @@ footer {
 i.fab {
     color: rgba(255, 255, 255, 0.4);
     font-size: 2rem;
-    @include padding (20px, 10px, 20px, 20px)
+    @include padding (20px, 10px, 20px, 20px);
     &:hover {
         color: $secondary;
+    }
+}
+
+.emailInput {
+    border: 1px solid #ffffff;
+    padding-left: 10px;
+}
+
+.footerBox input {
+    border: none;
+    background: transparent;
+    padding: 5px 10px 5px 0;
+    color: #ffffff;
+    width: 75%;
+    margin: 5px 10px 5px 0;
+}
+
+.footer__button {
+    width: 10%;
+    background: transparent;
+    border: none;
+    & i.far {
+        color: white;
     }
 }

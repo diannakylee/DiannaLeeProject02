@@ -232,13 +232,20 @@ header {
   background-position: center;
   height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat; }
-
-header.wrapper {
-  height: 100vh;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+header .wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .navBar {
   display: -webkit-box;
@@ -538,6 +545,9 @@ header.wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  @media (max-width: 665px) {
+    .gallery {
+      display: none; } }
   .gallery__cell {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -678,7 +688,8 @@ header.wrapper {
   flex-wrap: wrap; }
   @media (max-width: 665px) {
     .about {
-      padding: 70px 0; } }
+      padding: 70px 0;
+      margin: 0 auto; } }
   .about__title {
     margin-bottom: 30px;
     -ms-flex-preferred-size: 100%;
@@ -691,26 +702,58 @@ header.wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media (max-width: 530px) {
+      .about__gallery {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
   .about__images {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
     width: 30%;
     height: 100%;
     position: relative; }
+    @media (max-width: 530px) {
+      .about__images {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px; } }
   .about__imagesCaption {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
     background-color: rgba(29, 29, 29, 0.83);
     color: #eeeded;
     text-align: center;
     display: none; }
   .about__images:hover .about__imagesCaption {
     display: block; }
+
+.about__overlayText {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: auto;
+  flex-wrap: auto;
+  padding: 0 10px; }
 
 footer {
   background-color: #1d1d1d;
@@ -740,7 +783,7 @@ footer {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.4); }
 
 .footerBox {
-  width: 33.3%; }
+  width: 30%; }
   @media (max-width: 810px) {
     .footerBox {
       width: 50%; } }
@@ -774,31 +817,38 @@ footer {
   font-style: normal;
   margin-right: 10px; }
 
-.footerBox input {
-  background: transparent;
-  border: 1px solid #ffffff;
-  padding: 5px 10px;
-  color: #ffffff;
-  width: 100%;
-  margin: 10px 0; }
-
 .footerBox2 {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto; }
 
-@media (max-width: 810px) {
-  .footerBox3 {
-    width: 100%; } }
+.footerBox3 {
+  width: 40%; }
+  @media (max-width: 810px) {
+    .footerBox3 {
+      width: 100%; } }
 
 .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: auto;
+  flex-direction: auto;
+  -webkit-box-pack: auto;
+  -ms-flex-pack: auto;
+  justify-content: auto;
+  -webkit-box-align: auto;
+  -ms-flex-align: auto;
+  align-items: auto;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .instagram__cell {
     padding: 0 0 5px 5px; }
+    @media (max-width: 980px) {
+      .instagram__cell--last {
+        display: none; } }
 
 .navBar__logo--footer {
   -ms-flex-preferred-size: 100%;
@@ -838,3 +888,22 @@ i.fab {
   padding-left: 20px; }
   i.fab:hover {
     color: #0e5f88; }
+
+.emailInput {
+  border: 1px solid #ffffff;
+  padding-left: 10px; }
+
+.footerBox input {
+  border: none;
+  background: transparent;
+  padding: 5px 10px 5px 0;
+  color: #ffffff;
+  width: 75%;
+  margin: 5px 10px 5px 0; }
+
+.footer__button {
+  width: 10%;
+  background: transparent;
+  border: none; }
+  .footer__button i.far {
+    color: white; }

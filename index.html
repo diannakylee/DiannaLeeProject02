@@ -40,11 +40,13 @@
                 </nav>
             </div>
             <div class="heroText">
-                <h1 class="heroText__title">Welcome</h1>
-                <h3 class="heroText__subtitle">To My Corporate Website</h3>
-                <div class="heroText_button">
-                    <button class="blueButton">Start</button>
-                </div>
+                <!-- <div class="heroText__text"> -->
+                    <h1 class="heroText__title">Welcome</h1>
+                    <h3 class="heroText__subtitle">To My Corporate Website</h3>
+                    <div class="heroText_button">
+                        <button class="blueButton">Start</button>
+                    </div>
+                <!-- </div> -->
             </div>
         </div>
     </header>
@@ -221,14 +223,16 @@
                         <figure class="about__images">
                             <img src="assets/image-12.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
-                                <h3 class="about__name">Mark Cohen</h3>
-                                <p class="about__position">Founder</p>
+                                <div class="about__overlayText">
+                                    <h3 class="about__name">Mark Cohen</h3>
+                                    <p class="about__position">Founder</p>
+                                </div>
                             </figcaption>
                         </figure>
                         <figure class="about__images">
                             <img src="assets/image-13.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
-                                <div class="about__textBox">
+                                <div class="about__overlayText">
                                     <h3 class="about__name">David Reagan</h3>
                                     <p class="about__position">Programmer</p>
                                 </div>
@@ -237,8 +241,10 @@
                         <figure class="about__images">
                             <img src="assets/image-14.jpeg" alt="">
                             <figcaption class="about__imagesCaption">
-                                <h3 class="about__name">Stacy Kramer</h3>
-                                <p class="about__position">Designer</p>
+                                <div class="about__overlayText">
+                                    <h3 class="about__name">Stacy Kramer</h3>
+                                    <p class="about__position">Designer</p>
+                                </div>
                             </figcaption>
                         </figure>
                     </div>
@@ -255,8 +261,10 @@
                     <p class="footerBox1__text footerBox1__text--phone">123-456-7890</p>
                     <p class="footerBox1__text footerBox1__text--city">Toronto, Ontario</p>
                     <div class="emailInput">
-                        <input type="text" placeholder="email address">
-                        <button class="footer__button"></button>
+                        <input type="text" class="emailInput__box" placeholder="email address">
+                        <button class="footer__button">
+                            <i class="far fa-paper-plane"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="footerBox footerBox2">
@@ -290,11 +298,11 @@
                             <img src="assets/image-20.jpeg" alt="">
                             <figcaption class="instagram__cellOverlay"></figcaption>
                         </figure>
-                        <figure class="instagram__cell">
+                        <figure class="instagram__cell instagram__cell--last">
                             <img src="assets/image-21.jpeg" alt="">
                             <figcaption class="instagram__cellOverlay"></figcaption>
                         </figure>
-                        <figure class="instagram__cell">
+                        <figure class="instagram__cell instagram__cell--last">
                             <img src="assets/image-22.jpeg" alt="">
                             <figcaption class="instagram__cellOverlay"></figcaption>
                         </figure>
@@ -338,9 +346,6 @@
             <!-- Pinterest: f231. instagram:f16d, fb: f09a  -->
         </div>
     </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-        <script>
+
 </body>
 </html>

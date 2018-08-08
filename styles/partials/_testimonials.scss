@@ -29,6 +29,9 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    @include bp (665) {
+        display: none;
+    }
     &__cell {
         flex-basis: 25%;
         position: relative;
