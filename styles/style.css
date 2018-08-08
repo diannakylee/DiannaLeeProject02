@@ -204,8 +204,8 @@ h4 {
   font-size: 1.8rem; }
 
 p {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Open Sans"; }
   @media (max-width: 665px) {
     p {
@@ -223,6 +223,7 @@ header {
   background-position: center;
   height: 100vh;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,6 +715,9 @@ header .wrapper {
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative; }
+    @media (max-width: 665px) {
+      .services2__cell {
+        text-align: left; } }
 
 .services2 h2 {
   -ms-flex-preferred-size: 100%;
@@ -722,7 +726,12 @@ header .wrapper {
   text-align: center; }
 
 .titleTextButton--small {
-  padding: 50px; }
+  padding: 50px;
+  z-index: 5; }
+
+@media (max-width: 665px) {
+  .titleTextButton__button--small {
+    display: none; } }
 
 .services2__cellNumber {
   position: absolute;

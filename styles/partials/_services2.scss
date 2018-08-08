@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        @include bp (665) {
+            text-align: left;
+        }
     }
 }
 
@@ -23,6 +26,13 @@
 
 .titleTextButton--small {
     padding: 50px;
+    z-index: 5;
+}
+
+.titleTextButton__button--small {
+    @include bp (665) {
+        display: none;
+    }
 }
 
 .services2__cellNumber {
